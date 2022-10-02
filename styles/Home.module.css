@@ -1,0 +1,217 @@
+/* https://flatuicolors.com/palette/tr */
+
+.container {}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tests {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.test {
+  position: relative;
+  display: flex;
+  background: red;
+  padding: 5px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.actions {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.name {
+  display: block;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  background-color: transparent;
+  border-bottom: 2px solid #505050;
+}
+
+.button {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  color: #505050;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.addTest {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  color: #505050;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.addTest:hover {
+  transform: scale(1.2);
+}
+
+.removeTest {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transform: rotateZ(45deg);
+  font-size: 18px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.removeTest:hover {
+  transform: rotateZ(45deg) scale(1.2);
+}
+
+.test.pass {
+  background: #3ae374;
+}
+
+.testInput {
+  background-color: #c56cf0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hint {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.test header {
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.testExpected {
+  background-color: #ff9f1a;
+  display: flex;
+  flex-direction: column;
+}
+
+.machine {
+  display: flex;
+}
+
+.input {
+  background-color: #c56cf0; 
+}
+
+.input, .output {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.output {
+  background-color: #ff9f1a;
+}
+
+.operations {
+  display: flex;
+  background-color: #3ae374;
+  padding: 16px;
+}
+
+
+.bitInput {
+  border: 3px solid white;
+  background-color: black;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin: 16px;
+}
+
+.bitInput.on {
+  background-color: royalblue;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+}
+
+.op {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 16px;
+}
+
+.op::before {
+  position: absolute;
+  content: ' ';
+  border-bottom: 2px solid #fff;
+  height: 3px;
+  width: 64px;
+  top: 12px;
+  left: -16px;
+}
+
+.op.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.op.control::after {
+  content: ' ';
+  border-radius: 100%;
+  background-color: #505050;
+  width: 13px;
+  height: 13px;
+  z-index: 1;
+}
+
+.op.flip::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '➕';
+  font-size: 24px;
+  height: 100%;
+  transform: rotateZ(45deg);
+}
